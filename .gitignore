@@ -1,0 +1,5 @@
+/.idea
+/vendor
+/composer.phar
+/client.pem
+/client.key
