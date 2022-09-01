@@ -25,7 +25,7 @@ export EKO_API_HOST=/path/to/client.pem
 4. Set environment variable `EKO_API_ADDRESS` with proper eko-api address
 
 ```
-export EKO_API_HOST=host.example.com:443
+export EKO_API_ADDRESS=host.example.com:443
 ```
 
 5. Run demo application
