@@ -1,0 +1,13 @@
+{
+  "require": {
+    "php": ">=7.1",
+    "ekomobile/eko-api-client-php": "^0.8.2",
+    "ext-grpc": "*"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:ekomobile/eko-api-client-php.git"
+    }
+  ]
+}
