@@ -10,11 +10,11 @@ use Grpc\ChannelCredentials;
 require(__DIR__ . '/vendor/autoload.php');
 
 // Configure SSL credentials
-$cert = file_get_contents($_ENV['EKO_API_CLIENT_CERT']);
+$cert = file_get_contents(getenv('EKO_API_CLIENT_CERT'));
 $credentials = ChannelCredentials::createSsl(null, $cert, $cert);
 
 // Create gRPC client
-$client = new BillingClient($_ENV['EKO_API_ADDRESS'], ['credentials' => $credentials]);
+$client = new BillingClient(getenv('EKO_API_ADDRESS'), ['credentials' => $credentials]);
 
 // Form gRPC request
 $request = new ServiceCategoryRequest();
